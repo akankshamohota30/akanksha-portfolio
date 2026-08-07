@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Akanksha Mohota — AI Product Management Portfolio
 
-## Getting Started
+Personal portfolio of Akanksha Mohota, an aspiring AI Product Manager exploring the intersection of artificial intelligence, product strategy, research, and business.
 
-First, run the development server:
+## About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio showcases my work and interests across:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- AI Product Management
+- Product Strategy
+- AI Research
+- Market & Competitive Analysis
+- Customer & Client Discovery
+- AI Use Case Development
+- Business & Technology
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Featured Work
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Aza AI — AI Product Management Case Study
 
-## Learn More
+A product case study exploring AI-powered product opportunities, product thinking, and practical AI implementation.
 
-To learn more about Next.js, take a look at the following resources:
+### Research
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Research interests include AI product failures, deployed AI systems, product strategy, and the challenges of translating AI capabilities into products people actually use.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Experience
 
-## Deploy on Vercel
+**Fusionpact Technologies**  
+AI Business Development Intern
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Working across AI market research, competitive analysis, client discovery, government AI opportunities, and product strategy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS
+- GitHub Pages
+- GitHub Actions
+
+## Live Portfolio
+
+[Visit my portfolio](https://akankshamohota30.github.io/akanksha-portfolio/)
+
+## Contact
+
+For professional opportunities, collaborations, or conversations around AI products and research, connect with me through the portfolio.
+
+---
+
+Built with Next.js and deployed with GitHub Pages.
