@@ -1,7 +1,6 @@
 export default function Navbar() {
   return (
     <header className="navbar">
-      
       <div className="logo">
         AKANKSHA MOHOTA
       </div>
@@ -16,13 +15,13 @@ export default function Navbar() {
       </nav>
 
       <a
-  className="resume-button"
-  href="/akanksha-mohota-resume.pdf"
-  target="_blank"
-  rel="noreferrer"
->
-  Resume
-</a>
+        className="resume-button"
+        href="./akanksha-mohota-resume.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Resume
+      </a>
     </header>
   );
 }

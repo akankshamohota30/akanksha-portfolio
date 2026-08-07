@@ -8,7 +8,7 @@ return(
 <div className="aboutLeft">
 
 <img 
-src="/akanksha.jpg"
+src="./akanksha.jpg"
 alt="Akanksha Mohota"
 />
 
