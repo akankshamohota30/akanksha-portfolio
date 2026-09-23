@@ -12,7 +12,6 @@ export default function Experience() {
           Professional Experience
         </h2>
 
-
         <div className="experience-card">
 
           <div className="experience-header">
@@ -23,51 +22,35 @@ export default function Experience() {
               </h3>
 
               <h4>
-                AI Business Development Intern
+                AI/ML Business Development Intern
               </h4>
             </div>
 
-            <p className="experience-date">
-              March 2026 — Present
-            </p>
+            <div className="experience-date">
+              March 2026 — September 2026
+            </div>
 
           </div>
 
-
           <p className="experience-description">
-            Working on AI-driven solutions through market research,
-            competitive analysis, client discovery, government AI
-            opportunities, and business development initiatives.
+            Evaluated government tenders and RFPs, translating business,
+            technical, eligibility, and delivery requirements into actionable
+            AI/ML opportunity inputs. Supported proposal documentation and
+            coordinated business and technical stakeholders across
+            deadline-driven deliverables.
           </p>
-
 
           <div className="experience-tags">
 
-            <span>
-              AI Market Research
-            </span>
-
-            <span>
-              Competitive Analysis
-            </span>
-
-            <span>
-              Client Discovery
-            </span>
-
-            <span>
-              Government AI
-            </span>
-
-            <span>
-              Product Strategy
-            </span>
+            <span>AI/ML Opportunity Analysis</span>
+            <span>Government Tenders</span>
+            <span>RFP Analysis</span>
+            <span>Proposal Support</span>
+            <span>Stakeholder Coordination</span>
 
           </div>
 
-
         </div>
-
 
       </div>
 

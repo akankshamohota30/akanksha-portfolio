@@ -1,60 +1,56 @@
-export default function About(){
+export default function About() {
+  return (
+    <section id="about" className="about">
 
-return(
+      <div className="aboutLeft">
 
-<section id="about" className="about">
+        <img
+          src="/akanksha.jpg"
+          alt="Akanksha Mohota"
+        />
 
-
-<div className="aboutLeft">
-
-<img 
-src="./akanksha.jpg"
-alt="Akanksha Mohota"
-/>
-
-</div>
+      </div>
 
 
+      <div className="aboutRight">
 
-<div className="aboutRight">
-
-
-<p className="sectionTag">
-ABOUT
-</p>
+        <p className="sectionTag">
+          ABOUT
+        </p>
 
 
-<h2>
-  Curious about AI.
-  <br />
-  Obsessed with products.
-  <br />
-  Driven by impact.
-</h2>
-
-<p>
-  I’m Akanksha Mohota, an aspiring AI Product Manager exploring the space
-  where technology meets human needs and business outcomes.
-</p>
-
-<p>
-  My work sits at the intersection of AI research, customer understanding,
-  and product strategy — translating complex AI capabilities into practical
-  solutions.
-</p>
-
-<p>
-  Alongside product work, I write about AI product management, research
-  failure patterns in deployed AI systems, and the challenges of turning
-  AI ideas into products people actually use.
-</p>
+        <h2>
+          Curious about AI.
+          <br />
+          Obsessed with products.
+          <br />
+          Driven by impact.
+        </h2>
 
 
-</div>
+        <p>
+          I’m Akanksha Mohota, an aspiring AI Product Manager focused on
+          turning generative AI capabilities into useful, responsible,
+          and measurable products.
+        </p>
 
 
-</section>
+        <p>
+          My work sits at the intersection of product management, GenAI,
+          user research, and business problems — translating user needs
+          and technical possibilities into practical product decisions.
+        </p>
 
-)
 
+        <p>
+          I’m particularly interested in agentic AI, fintech, explainable
+          AI, and the challenges of building AI products that people can
+          understand, trust, and use.
+        </p>
+
+
+      </div>
+
+    </section>
+  );
 }

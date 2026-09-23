@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="hero-left">
 
         <p className="eyebrow">
-          AI PRODUCT MANAGEMENT • RESEARCH • BUSINESS STRATEGY
+           AI PRODUCT MANAGEMENT • GENAI • PRODUCT RESEARCH
         </p>
 
         <h1>

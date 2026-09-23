@@ -3,70 +3,105 @@ const projects = [
     title: "Aza",
     subtitle: "AI Customer Service Agent",
     context:
-      "Independent product case study based on analysis of the Amazon India customer-service experience. Not affiliated with Amazon.",
+      "Independent AI product project focused on customer-service automation.",
     role: "AI Product Manager",
     date: "March 2026",
     link: "https://akankshamohota30-aza-resolve-ai.vercel.app/",
     caseStudy: "./aza-ai-pm-case-study.pdf",
+
     problem:
-      "Analysed 10+ Amazon India user reviews to identify recurring customer-service failure patterns.",
+      "Analyzed 10+ Amazon customer reviews and tested 100 support scenarios to evaluate customer-service automation.",
+
     work: [
-      "Built an assumption-led ROI model for support automation.",
-      "Defined Jobs-to-be-Done requirements and built an agentic prototype.",
-      "Designed the A-Pay instant-refund flow and documented edge cases, failure scenarios, and fraud-detection gaps.",
+      "Analyzed 10+ Amazon customer reviews to identify customer-service pain points.",
+      "Tested 100 support scenarios, evaluating resolution quality and refund handling.",
+      "Built and deployed an agentic workflow using Emergent AI.",
+      "Mapped failure modes, fraud risks, escalation paths, and policy edge cases into product requirements.",
+      "Developed a directional ROI model to evaluate automation value across resolution time, escalation volume, and support costs.",
     ],
+
     outcomes: [
-      "Opportunity model: ₹43.2B annual savings at 80% automation",
-      "Target: under 2-minute resolution for routine issues",
+      "89% resolution rate",
+      "94% refund-handling accuracy",
+      "80% lower average resolution time",
     ],
-    tags: ["Product Analysis", "JTBD", "ROI Modelling", "Agentic AI", "AI Quality"],
-  },
-  {
-    title: "Credo",
-    subtitle: "AI Credit Decision Explainer",
-    context: "Live product",
-    role: "AI Product Manager",
-    date: "July 2026",
-    link: "https://credo-app-mu.vercel.app/",
-    problem:
-      "Built a product to translate credit-decision factors into clear, plain-language explanations.",
-    work: [
-      "Designed explanations ranked by relative importance to reduce model-gaming risk.",
-      "Authored a heuristic bias-audit rulebook for proxy-variable risk affecting gig and informal-income applicants.",
-      "Delivered the PRD, React frontend, Vercel serverless AI layer, and Redis persistence.",
-    ],
-    outcomes: ["100% of decisions audited in real time"],
+
     tags: [
-      "Explainable AI",
-      "Ethical AI",
-      "PRD",
-      "React",
-      "Vercel",
-      "Redis",
+      "AI Product Management",
+      "Agentic AI",
+      "Customer Service",
+      "ROI Modelling",
+      "AI Quality",
     ],
   },
+
   {
     title: "AI-Driven Financial Inclusion Platform",
     subtitle: "Financial services product",
     context: "Product research and PRD",
+
     role: "AI Product Manager",
-    date: "Oct 2025 - Jan 2026",
+    date: "October 2025 — January 2026",
+
     problem:
-      "Investigated adoption barriers in AI-enabled financial services.",
+      "Investigated adoption barriers in AI-enabled financial services through user research and product discovery.",
+
     work: [
-      "Conducted 10+ user interviews and competitive research.",
-      "Identified three adoption barriers: trust deficit, low digital literacy, and onboarding friction.",
-      "Authored a PRD for eight prioritised features, including AI safeguards and conversational user flows.",
+      "Conducted 10+ user interviews and identified 3 adoption barriers.",
+      "Translated research findings into an 8-feature PRD.",
+      "Prioritized solutions using RICE.",
+      "Iterated the product through a 30-user usability study.",
+      "Defined activation, task-completion time, and week-1 retention as product success metrics.",
     ],
+
     outcomes: [
-      "Defined activation rate, task completion time, and first-week retention as success metrics",
+      "+26 pp activation",
+      "+23 pp task success",
+      "40% lower task-completion time",
     ],
+
     tags: [
       "User Research",
-      "Competitive Research",
+      "RICE",
       "PRD",
-      "AI Safeguards",
       "Product Metrics",
+      "Financial Inclusion",
+    ],
+  },
+
+  {
+    title: "Credo",
+    subtitle: "AI Credit Decision Explainer",
+    context: "Live product",
+
+    role: "AI Product Manager",
+    date: "July 2026",
+
+    link: "https://credo-app-mu.vercel.app/",
+
+    problem:
+      "Built and evaluated an AI credit-explanation agent designed to make credit-decision rationale easier to understand.",
+
+    work: [
+      "Built and evaluated the AI credit-explanation agent across 100 decision scenarios.",
+      "Validated explanations with 30 users to assess whether decision rationale was understandable.",
+      "Conducted a bias audit covering disparate impact, equal opportunity, and proxy-variable risks.",
+      "Owned product and technical delivery across the PRD, React frontend, Vercel serverless AI layer, and Redis persistence.",
+    ],
+
+    outcomes: [
+      "94% factor-identification accuracy",
+      "95% explanation accuracy",
+      "87% correct interpretation of decision rationale",
+    ],
+
+    tags: [
+      "Explainable AI",
+      "Ethical AI",
+      "Bias Auditing",
+      "React",
+      "Vercel",
+      "Redis",
     ],
   },
 ];
@@ -74,67 +109,136 @@ const projects = [
 export default function ProductWork() {
   return (
     <section id="work" className="product-work-section">
-      <div className="product-work-container">
-        <p className="section-label">SELECTED PRODUCT WORK</p>
 
-        <h2 className="product-work-title">Projects</h2>
+      <div className="product-work-container">
+
+        <p className="section-label">
+          SELECTED PRODUCT WORK
+        </p>
+
+        <h2 className="product-work-title">
+          Projects
+        </h2>
 
         <div className="product-work-list">
+
           {projects.map((project, index) => (
-            <article className="product-work-card" key={project.title}>
+
+            <article
+              className="product-work-card"
+              key={project.title}
+            >
+
               <div className="product-work-number">
                 {String(index + 1).padStart(2, "0")}
               </div>
 
+
               <div className="product-work-main">
+
                 <div className="product-work-header">
+
                   <div>
-                    <h3>{project.title}</h3>
-                    <p className="product-work-subtitle">{project.subtitle}</p>
+
+                    <h3>
+                      {project.title}
+                    </h3>
+
+                    <p className="product-work-subtitle">
+                      {project.subtitle}
+                    </p>
+
                   </div>
+
 
                   <div className="product-work-meta">
-                    <span>{project.role}</span>
-                    <span>{project.date}</span>
+
+                    <span>
+                      {project.role}
+                    </span>
+
+                    <span>
+                      {project.date}
+                    </span>
+
                   </div>
+
                 </div>
 
-                <p className="product-work-context">{project.context}</p>
+
+                <p className="product-work-context">
+                  {project.context}
+                </p>
+
 
                 <div className="product-work-grid">
-                  <div>
-                    <p className="product-work-label">Problem</p>
-                    <p className="product-work-text">{project.problem}</p>
-                  </div>
 
                   <div>
-                    <p className="product-work-label">Product work</p>
+
+                    <p className="product-work-label">
+                      Problem
+                    </p>
+
+                    <p className="product-work-text">
+                      {project.problem}
+                    </p>
+
+                  </div>
+
+
+                  <div>
+
+                    <p className="product-work-label">
+                      Product work
+                    </p>
 
                     <ul className="product-work-list-items">
+
                       {project.work.map((item) => (
-                        <li key={item}>{item}</li>
+                        <li key={item}>
+                          {item}
+                        </li>
                       ))}
+
                     </ul>
+
                   </div>
+
                 </div>
+
 
                 <div className="product-work-outcomes">
-                  <p className="product-work-label">Outcomes</p>
+
+                  <p className="product-work-label">
+                    Outcomes
+                  </p>
 
                   <div className="product-work-outcome-list">
+
                     {project.outcomes.map((outcome) => (
-                      <span key={outcome}>{outcome}</span>
+                      <span key={outcome}>
+                        {outcome}
+                      </span>
                     ))}
+
                   </div>
+
                 </div>
+
 
                 <div className="product-work-tags">
+
                   {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
+                    <span key={tag}>
+                      {tag}
+                    </span>
                   ))}
+
                 </div>
 
+
                 <div className="product-work-links">
+
                   {project.link && (
                     <a
                       className="product-work-link"
@@ -156,12 +260,19 @@ export default function ProductWork() {
                       Read case study <span>↗</span>
                     </a>
                   )}
+
                 </div>
+
               </div>
+
             </article>
+
           ))}
+
         </div>
+
       </div>
+
     </section>
   );
 }

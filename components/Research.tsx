@@ -2,65 +2,93 @@ export default function Research() {
   return (
     <section id="research" className="research-section">
       <div className="research-container">
-        <p className="section-label">PUBLICATION</p>
 
-        <h2 className="research-title">Research</h2>
+        <p className="section-label">
+          RESEARCH
+        </p>
+
+        <h2 className="research-title">
+          Research & Writing
+        </h2>
 
         <article className="research-card">
-          <div className="research-card-top">
-            <span className="research-type">Published Research Paper</span>
 
-            <span className="research-year">November 2025</span>
+          <div className="research-card-top">
+
+            <div>
+              <p className="research-type">
+                PUBLICATION
+              </p>
+
+              <h3>
+                Bridging the Gap: How AI Can Drive Financial Inclusion
+                in Emerging Markets
+              </h3>
+
+              <p className="research-journal">
+                Qualitative research
+              </p>
+            </div>
+
+            <span className="research-year">
+              2026
+            </span>
+
           </div>
 
-          <h3>
-            Bridging the Gap: How AI Can Drive Financial Inclusion in Emerging
-            Markets
-          </h3>
-
-          <p className="research-journal">
-            International Journal For Multidisciplinary Research · Volume 7,
-            Issue 6
-          </p>
-
           <div className="research-content">
+
             <div>
-              <p className="research-content-label">Research focus</p>
+              <p className="research-content-label">
+                Research focus
+              </p>
 
               <p>
-                A qualitative comparative analysis of AI-enabled financial
-                inclusion in India and the United States.
+                Qualitative analysis of AI-enabled financial inclusion
+                across India and the US, examining how AI can improve
+                access to financial services while addressing trust,
+                accessibility, and responsible-use challenges.
               </p>
             </div>
 
             <div>
-              <p className="research-content-label">Areas covered</p>
+              <p className="research-content-label">
+                Framework
+              </p>
 
               <ul>
-                <li>Credit access and AI-enabled risk assessment</li>
-                <li>Personalised financial services</li>
-                <li>Financial literacy and digital trust</li>
-                <li>Ethical AI and transparent governance</li>
+                <li>Credit access</li>
+                <li>Personalisation</li>
+                <li>Financial literacy</li>
+                <li>Ethical AI product design</li>
               </ul>
             </div>
+
           </div>
 
           <div className="research-tags">
+
+            <span>AI</span>
             <span>Financial Inclusion</span>
             <span>Fintech</span>
             <span>Ethical AI</span>
-            <span>Comparative Analysis</span>
+            <span>User-Centric Product Design</span>
+
           </div>
 
-          <a
-            className="research-link"
-            href="https://www.ijfmr.com/research-paper.php?id=59121"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View publication <span>↗</span>
-          </a>
+          <div className="research-card-links">
+            <a
+              className="research-link"
+              href="https://doi.org/10.36948/ijfmr.2025.v07i06.59121"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View paper <span>↗</span>
+            </a>
+          </div>
+
         </article>
+
       </div>
     </section>
   );

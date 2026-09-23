@@ -1,10 +1,32 @@
 const skillGroups = [
   {
-    category: "Product Management",
+    number: "01",
+    title: "AI & Technical",
+    skills: [
+      "Agentic Workflows",
+      "Prompt Engineering",
+      "GenAI",
+      "LLMs",
+      "Gemini API",
+      "API Integration",
+      "TypeScript",
+      "React",
+      "Vite",
+      "Vercel",
+      "Redis",
+      "Git & GitHub",
+      "HuggingFace",
+      "EmergentAI",
+    ],
+  },
+
+  {
+    number: "02",
+    title: "Product",
     skills: [
       "PRDs",
       "RICE",
-      "Jobs-to-be-Done",
+      "JTBD",
       "Roadmapping",
       "ROI Modelling",
       "KPI Frameworks",
@@ -13,28 +35,11 @@ const skillGroups = [
       "Bias Auditing",
     ],
   },
+
   {
-    category: "AI Product Development",
+    number: "03",
+    title: "Tools",
     skills: [
-      "Agentic Workflows",
-      "Prompt Engineering",
-      "Generative AI",
-      "LLMs",
-      "Gemini API",
-      "API Integration",
-      "Hugging Face",
-      "EmergentAI",
-    ],
-  },
-  {
-    category: "Technical Delivery",
-    skills: [
-      "TypeScript",
-      "React",
-      "Vite",
-      "Vercel Serverless Functions",
-      "Redis",
-      "Git and GitHub",
       "Notion",
       "Figma",
       "Google Analytics",
@@ -47,29 +52,52 @@ const skillGroups = [
 export default function SkillsTools() {
   return (
     <section id="skills" className="skills-tools-section">
-      <div className="skills-tools-container">
-        <p className="section-label">SKILLS &amp; TOOLS</p>
 
-        <h2 className="skills-tools-title">Skills &amp; Tools</h2>
+      <div className="skills-tools-container">
+
+        <p className="section-label">
+          SKILLS & TOOLS
+        </p>
+
+        <h2 className="skills-tools-title">
+          How I Work
+        </h2>
 
         <div className="skills-tools-grid">
-          {skillGroups.map((group, index) => (
-            <article className="skills-tools-card" key={group.category}>
+
+          {skillGroups.map((group) => (
+
+            <article
+              className="skills-tools-card"
+              key={group.number}
+            >
+
               <span className="skills-tools-number">
-                {String(index + 1).padStart(2, "0")}
+                {group.number}
               </span>
 
-              <h3>{group.category}</h3>
+              <h3>
+                {group.title}
+              </h3>
 
               <div className="skills-tools-list">
+
                 {group.skills.map((skill) => (
-                  <span key={skill}>{skill}</span>
+                  <span key={skill}>
+                    {skill}
+                  </span>
                 ))}
+
               </div>
+
             </article>
+
           ))}
+
         </div>
+
       </div>
+
     </section>
   );
 }
