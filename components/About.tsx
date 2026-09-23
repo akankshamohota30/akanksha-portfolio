@@ -1,3 +1,8 @@
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/akanksha-portfolio"
+    : "";
+
 export default function About() {
   return (
     <section id="about" className="about">
@@ -5,19 +10,17 @@ export default function About() {
       <div className="aboutLeft">
 
         <img
-          src="/akanksha.jpg"
+          src={`${basePath}/akanksha.jpg`}
           alt="Akanksha Mohota"
         />
 
       </div>
-
 
       <div className="aboutRight">
 
         <p className="sectionTag">
           ABOUT
         </p>
-
 
         <h2>
           Curious about AI.
@@ -27,13 +30,11 @@ export default function About() {
           Driven by impact.
         </h2>
 
-
         <p>
           I’m Akanksha Mohota, an aspiring AI Product Manager focused on
           turning generative AI capabilities into useful, responsible,
           and measurable products.
         </p>
-
 
         <p>
           My work sits at the intersection of product management, GenAI,
@@ -41,13 +42,11 @@ export default function About() {
           and technical possibilities into practical product decisions.
         </p>
 
-
         <p>
           I’m particularly interested in agentic AI, fintech, explainable
           AI, and the challenges of building AI products that people can
           understand, trust, and use.
         </p>
-
 
       </div>
 

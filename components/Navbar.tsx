@@ -1,3 +1,8 @@
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/akanksha-portfolio"
+    : "";
+
 export default function Navbar() {
   return (
     <header className="navbar">
@@ -6,15 +11,16 @@ export default function Navbar() {
       </div>
 
       <nav>
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#work">Work</a>
-  <a href="#research">Research</a>
-  <a href="#contact">Contact</a>
-</nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <a
         className="resume-button"
-        href="/akanksha-mohota-resume.pdf"
+        href={`${basePath}/akanksha-mohota-resume.pdf`}
         target="_blank"
         rel="noreferrer"
       >
